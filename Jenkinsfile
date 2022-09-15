@@ -1,7 +1,7 @@
 pipeline {
    agent any
    environment {
-       registry = "pavanshivanand/GoAnsiblekubernetesPipelineSCM"
+       registry = "pavanshivanand/goansiblekubernetespipelinescm"
        GO111MODULE = 'on'
        GOCACHE = "/tmp"
    }
