@@ -1,4 +1,6 @@
 FROM alpine:3.16
+RUN mkdir /go
+RUN mkdir /go/src
 RUN mkdir /go/src/app
 ADD main.go /go/src/app/
 WORKDIR /go/src/app
