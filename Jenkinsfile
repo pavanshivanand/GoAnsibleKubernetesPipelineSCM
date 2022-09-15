@@ -1,8 +1,5 @@
 pipeline {
    agent any
-   tools {
-   go 'go'
-      }
    environment {
        registry = "pavanshivanand/GoAnsiblekubernetesPipelineSCM"
        GO111MODULE = 'on'
