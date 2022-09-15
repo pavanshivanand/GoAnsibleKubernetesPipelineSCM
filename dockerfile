@@ -1,4 +1,4 @@
-FROM golang:latest
+FROM golang:latest as build
 
 # Create and change to the app directory.
 WORKDIR /app
