@@ -1,4 +1,4 @@
-FROM alpine:3.16
+FROM golang:latest
 RUN mkdir /go
 RUN mkdir /go/src
 RUN mkdir /go/src/app
