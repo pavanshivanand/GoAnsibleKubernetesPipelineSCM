@@ -1,4 +1,4 @@
-FROM golang:latest
+FROM alpine:3.16
 RUN mkdir /go/src/app && apk update && apk add git
 ADD main.go /go/src/app/
 WORKDIR /go/src/app
