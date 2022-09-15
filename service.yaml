@@ -1,12 +1,11 @@
 apiVersion: v1
-kind: Service
+kind: goansiblekubernetespipelinescm
 metadata:
   name: goansiblekubernetespipelinescm
 spec:
+  type: LoadBalancer
   selector:
-    role: app
+    app: goansiblekubernetespipelinescm
   ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 8080
-      nodePort: 3
+  - port: 80
+    targetPort: 8080
