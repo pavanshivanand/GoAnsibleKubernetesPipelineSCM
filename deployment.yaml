@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: goansiblekubernetespipelinescm
+  labels:
+    role: goansiblekubernetespipelinescm
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      role: goansiblekubernetespipelinescm
+  template:
+    metadata:
+      labels:
+        role: goansiblekubernetespipelinescm
+    spec:
+      containers:
+      - name: goansiblekubernetespipelinescm
+        image: "{{ image_id }}"
+      resources:
+          limits:
+            memory: "128Mi"
+            cpu: "250m"
+        ports:  
+        - containerPort: 80
